@@ -26,7 +26,7 @@ I recommend making project's source code folder structure to be same as view con
 
 ## To add new set of scene classes to the project
 1. Select the scene subfolder.
-1. Use menu File->New->File... or press <kbd>⌘N</kbd>. Choose template window appears. 
+1. Use menu File->New->File... or press <kbd>&#8984;</kbd><kbd>N</kbd>. Choose template window appears. 
 2. Scroll to "1. Clean Architecture Swift" (or "2. Clean Architecture Objective-C") section depending on the language you use.
 3. Select "Scene" template and press Next. Choose options window appears.
 4. Enter the name of the scene and select the view controller's base class (f.e. UITableViewController) from the drop down list.
@@ -34,7 +34,7 @@ I recommend making project's source code folder structure to be same as view con
 
 ## To add unit tests for the scene
 1. Select unit tests subfolder in the project. 
-1. Use menu File->New->File... or press <kbd>⌘N</kbd>. Choose template window appears. 
+1. Use menu File->New->File... or press <kbd>&#8984;</kbd><kbd>N</kbd>. Choose template window appears. 
 2. Scroll to "1. Clean Architecture Swift" (or "2. Clean Architecture Objective-C") section depending on the language you use.
 3. Select "Quick Unit Test" if you use Quick/Nimble frameworks for unit testing (or "Unit Tests" for XCTest based tests) and press Next. Unit tests for Interactor Presenter and View Controller are added to your project!
 
