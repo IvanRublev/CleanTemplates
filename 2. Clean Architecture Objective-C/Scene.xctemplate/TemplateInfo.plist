@@ -106,13 +106,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Models</string>
+			<string>___VARIABLE_sceneName:identifier___BoundaryModels</string>
 			<key>Description</key>
-			<string>The model file name</string>
+			<string>The boundary models file name</string>
 			<key>Identifier</key>
 			<string>modelFileName</string>
 			<key>Name</key>
-			<string>Model File Name:</string>
+			<string>Models Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
