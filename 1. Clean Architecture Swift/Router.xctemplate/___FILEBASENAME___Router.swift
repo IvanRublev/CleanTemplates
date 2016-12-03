@@ -43,7 +43,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router {
     
     func sendDataToSomewhereScene(_ segue: UIStoryboardSegue) {
         // NOTE: Teach the router how to pass data to the next scene
-        // let someWhereViewController = segue.destinationViewController as! SomeWhereViewController
+        // let someWhereViewController = segue.destination as! SomeWhereViewController
         // someWhereviewController.objectId = viewController?.objectId
     }
 }
