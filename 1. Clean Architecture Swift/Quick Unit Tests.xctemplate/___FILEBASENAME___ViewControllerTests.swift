@@ -39,7 +39,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
             beforeEach {
                 window = UIWindow()
                 window.addSubview(viewController.view)
-                viewController.beginAppearanceTransition(true, animated: false) // Triggers .viewDidLoad(), .viewWillAppear(), and .viewDidAppear() events.
+                viewController.beginAppearanceTransition(true, animated: false) // Triggers .viewWillAppear() and .viewDidAppear() events.
                 viewController.endAppearanceTransition()
             }
             afterEach {

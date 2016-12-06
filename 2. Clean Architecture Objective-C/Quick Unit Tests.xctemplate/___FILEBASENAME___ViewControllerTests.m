@@ -44,7 +44,7 @@ describe(@"The view load", ^{
     beforeEach(^{
         window = [UIWindow new];
         [window addSubview:viewController.view];
-        // Triggers .viewDidLoad(), .viewWillAppear(), and .viewDidAppear() events.
+        // Triggers .viewWillAppear() and .viewDidAppear() events.
         [viewController beginAppearanceTransition:YES animated:NO];
         [viewController endAppearanceTransition];
     });
