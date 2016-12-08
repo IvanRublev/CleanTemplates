@@ -8,6 +8,11 @@ Portions are taken from templates project by HELM (https://github.com/HelmMobile
 To learn more about Clean Swift and the VIP cycle, read: http://clean-swift.com/clean-swift-ios-architecture
 To get the original concept of the Clean Architecture, see Uncle Bob's explanation: https://www.youtube.com/watch?v=o_TH-Y78tt4
 
+## Example
+
+See the example [MyLife2](https://github.com/IvanRublev/MyLife2) app that is written in Swift via the Clean Templates.
+
+
 # Installation
 
 To install the Clean Architecture XCode templates, run:
