@@ -7,10 +7,13 @@
 //
 
 @import UIKit;
-#import "___FILEBASENAMEASIDENTIFIER___InteractorBoundaryProtocols.h"
-#import "___FILEBASENAMEASIDENTIFIER___PresenterOutputProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
+#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
 
-@class ___FILEBASENAMEASIDENTIFIER___ResponseViewModel, ___FILEBASENAMEASIDENTIFIER___Request, ___FILEBASENAMEASIDENTIFIER___Router;
+@protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput;
+@protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput;
+
+@class ___FILEBASENAMEASIDENTIFIER___Router;
 
 /**
     Class to control the collection view of the scene.

@@ -7,8 +7,15 @@
 //
 
 @import UIKit;
-#import "___FILEBASENAMEASIDENTIFIER___InteractorBoundaryProtocols.h"
-#import "___FILEBASENAMEASIDENTIFIER___PresenterOutputProtocol.h"
+#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
+
+@protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput;
+
+@class ___FILEBASENAMEASIDENTIFIER___ResponseViewModel;
+
+@protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput
+- (void)displaySomethingWithViewModel:(nonnull ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel;
+@end
 
 /**
     Class to format the data response from the Interactor and pass the result view model to the View Controller
