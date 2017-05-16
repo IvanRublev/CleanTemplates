@@ -22,13 +22,13 @@
 }
 
 #pragma mark View lifecycle
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self doSomethingOnLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self doSomethingOnAppear];
 }
 
 #pragma mark Event handling
-- (void)doSomethingOnLoad {
+- (void)doSomethingOnAppear {
     // NOTE: Ask the Interactor to do some work
     ___FILEBASENAMEASIDENTIFIER___Request *request = [[___FILEBASENAMEASIDENTIFIER___Request alloc] init];
     [self.output doSomethingWithRequest:request];
