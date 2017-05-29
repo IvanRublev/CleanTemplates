@@ -13,19 +13,6 @@
 #import "___FILEBASENAME___Presenter.h"
 
 @implementation ___FILEBASENAMEASIDENTIFIER___Configurator
-#pragma mark Singleton
-static id sharedInstance;
-
-+ (void)initialize {
-    if ([___FILEBASENAMEASIDENTIFIER___Configurator class] == self) {
-        sharedInstance = [self new];
-    }
-}
-
-+ (instancetype)sharedInstance {
-    return sharedInstance;
-}
-
 #pragma mark Configuration
 - (void)configureViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
     ___FILEBASENAMEASIDENTIFIER___Router *router = [___FILEBASENAMEASIDENTIFIER___Router new];

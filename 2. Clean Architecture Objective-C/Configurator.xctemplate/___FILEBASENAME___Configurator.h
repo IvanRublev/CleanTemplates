@@ -14,6 +14,5 @@
     Class to build view controller dependency tree. Makes and links ViewController, Interactor, and Presenter objects.
  */
 @interface ___FILEBASENAMEASIDENTIFIER___Configurator: NSObject
-+ (nonnull instancetype)sharedInstance;
 - (void)configureViewController:(nonnull ___FILEBASENAMEASIDENTIFIER___ViewController *)viewController;
 @end

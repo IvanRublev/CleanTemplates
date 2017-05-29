@@ -12,13 +12,14 @@ import UIKit
     Class to control the view of the scene.
  */
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
+    var configurator = ___FILEBASENAMEASIDENTIFIER___Configurator()
     var output: ___FILEBASENAMEASIDENTIFIER___InteractorInput!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
     
     // MARK: Object lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
+        configurator.configure(viewController: self)
     }
     
     // MARK: View lifecycle

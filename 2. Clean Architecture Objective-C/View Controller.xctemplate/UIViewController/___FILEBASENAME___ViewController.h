@@ -14,6 +14,7 @@
 @protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput;
 
 @class ___FILEBASENAMEASIDENTIFIER___Router;
+@class ___FILEBASENAMEASIDENTIFIER___Configurator;
 
 /**
     Class to control the view of the scene.
@@ -21,4 +22,5 @@
 @interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
 @property (nonatomic, nonnull) id<___FILEBASENAMEASIDENTIFIER___InteractorInput> output;
 @property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Router *router;
+@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Configurator *configurator;
 @end

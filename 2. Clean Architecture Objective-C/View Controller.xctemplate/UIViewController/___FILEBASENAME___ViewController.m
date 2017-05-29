@@ -16,9 +16,16 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___ViewController
 #pragma mark Object lifecycle
+- (___FILEBASENAMEASIDENTIFIER___Configurator *)configurator {
+    if (_configurator == nil) {
+        _configurator = [___FILEBASENAMEASIDENTIFIER___Configurator new];
+    }
+    return _configurator;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance configureViewController:self];
+    [self.configurator configureViewController:self];
 }
 
 #pragma mark View lifecycle

@@ -12,8 +12,6 @@ import UIKit
     Class to build view controller's dependency tree. Makes and links ViewController, Interactor, and Presenter objects.
  */
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
-    static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
-    
     func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
         let router = ___FILEBASENAMEASIDENTIFIER___Router()
         router.viewController = viewController
