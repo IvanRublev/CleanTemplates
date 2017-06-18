@@ -12,17 +12,19 @@
 #import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
 
 #pragma mark Mock
+NS_ASSUME_NONNULL_BEGIN
 @interface ___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorInput>
 @property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___Request *receivedRequest;
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock
 
-- (void)doSomethingWithRequest:(nonnull ___FILEBASENAMEASIDENTIFIER___Request *)request {
+- (void)doSomethingWithRequest:(___FILEBASENAMEASIDENTIFIER___Request *)request {
     self.receivedRequest = request;
 }
 
 @end
+NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Spec

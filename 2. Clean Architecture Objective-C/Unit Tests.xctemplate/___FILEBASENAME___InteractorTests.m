@@ -11,17 +11,19 @@
 #import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
 
 #pragma mark Mock
+NS_ASSUME_NONNULL_BEGIN
 @interface ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorOutput>
 @property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___Response *receivedResponse;
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock
 
-- (void)presentSomethingWithResponse:(nonnull ___FILEBASENAMEASIDENTIFIER___Response *)response {
+- (void)presentSomethingWithResponse:(___FILEBASENAMEASIDENTIFIER___Response *)response {
     self.receivedResponse = response;
 }
 
 @end
+NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Class

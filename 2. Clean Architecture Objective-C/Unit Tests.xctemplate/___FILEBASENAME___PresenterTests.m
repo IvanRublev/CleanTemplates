@@ -11,17 +11,19 @@
 #import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
 
 #pragma mark Mock
+NS_ASSUME_NONNULL_BEGIN
 @interface ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
 @property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *receivedViewModel;
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock
 
-- (void)displaySomethingWithViewModel:(nonnull ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel {
+- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel {
     self.receivedViewModel = viewModel;
 }
 
 @end
+NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Class

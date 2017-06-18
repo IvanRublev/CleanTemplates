@@ -13,8 +13,14 @@
 #import "___FILEBASENAME___Presenter.h"
 
 @implementation ___FILEBASENAMEASIDENTIFIER___Configurator
-#pragma mark Configuration
-- (void)configureViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
+
++ (___FILEBASENAMEASIDENTIFIER___ViewController *)viewControllerConfigured {
+    ___FILEBASENAMEASIDENTIFIER___ViewController *viewController = [___FILEBASENAMEASIDENTIFIER___ViewController new];
+    [self configureViewController:viewController];
+    return viewController;
+}
+
++ (void)configureViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
     ___FILEBASENAMEASIDENTIFIER___Router *router = [___FILEBASENAMEASIDENTIFIER___Router new];
     router.viewController = viewController;
     

@@ -11,17 +11,19 @@
 /**
     Structures that View Controller, Interactor and Presenter pass over boundary interfaces from one to other.
  */
+NS_ASSUME_NONNULL_BEGIN
 @interface ___FILEBASENAMEASIDENTIFIER___Request: NSObject
-@property (nonatomic, copy, readonly) NSDate *someProperty;
-- (instancetype)initWithSomeProperty:(NSDate *)someProperty;
+@property (nonatomic, copy, readonly, nullable) NSDate *someProperty;
+- (instancetype)initWithSomeProperty:(nullable NSDate *)someProperty;
 @end
 
 @interface ___FILEBASENAMEASIDENTIFIER___Response: NSObject
-@property (nonatomic, copy, readonly) NSNumber *someProperty;
-- (instancetype)initWithSomeProperty:(NSNumber *)someProperty;
+@property (nonatomic, copy, readonly, nullable) NSNumber *someProperty;
+- (instancetype)initWithSomeProperty:(nullable NSNumber *)someProperty;
 @end
 
 @interface ___FILEBASENAMEASIDENTIFIER___ResponseViewModel: NSObject
-@property (nonatomic, copy, readonly) NSString *someProperty;
-- (instancetype)initWithSomeProperty:(NSString *)someProperty;
+@property (nonatomic, copy, readonly, nullable) NSString *someProperty;
+- (instancetype)initWithSomeProperty:(nullable NSString *)someProperty;
 @end
+NS_ASSUME_NONNULL_END

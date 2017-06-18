@@ -13,8 +13,9 @@
 
 @class ___FILEBASENAMEASIDENTIFIER___ResponseViewModel;
 
+NS_ASSUME_NONNULL_BEGIN
 @protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput
-- (void)displaySomethingWithViewModel:(nonnull ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel;
+- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel;
 @end
 
 /**
@@ -23,3 +24,4 @@
 @interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorOutput>
 @property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___PresenterOutput> output;
 @end
+NS_ASSUME_NONNULL_END

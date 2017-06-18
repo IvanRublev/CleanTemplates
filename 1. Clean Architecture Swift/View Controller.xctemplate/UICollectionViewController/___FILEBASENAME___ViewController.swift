@@ -11,15 +11,19 @@ import UIKit
 /**
     Class to control the collection view of the scene.
  */
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController, ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-    var configurator = ___FILEBASENAMEASIDENTIFIER___Configurator()
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable, ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
     var output: ___FILEBASENAMEASIDENTIFIER___InteractorInput!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
     
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable
+    static func viewControllerConfigured() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
+        return ___FILEBASENAMEASIDENTIFIER___Configurator.viewControllerConfigured()
+    }
+
     // MARK: Object lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        configurator.configure(viewController: self)
+        ___FILEBASENAMEASIDENTIFIER___Configurator.configure(viewController: self)
     }
     
     // MARK: View lifecycle

@@ -9,18 +9,19 @@
 @import UIKit;
 #import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
 #import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
+#import "___FILEBASENAMEASIDENTIFIER___Configurator.h"
 
 @protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput;
 @protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput;
 
 @class ___FILEBASENAMEASIDENTIFIER___Router;
-@class ___FILEBASENAMEASIDENTIFIER___Configurator;
 
 /**
     Class to control the view of the scene.
  */
-@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
-@property (nonatomic, nonnull) id<___FILEBASENAMEASIDENTIFIER___InteractorInput> output;
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Router *router;
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Configurator *configurator;
+NS_ASSUME_NONNULL_BEGIN
+@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController <___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable, ___FILEBASENAMEASIDENTIFIER___PresenterOutput>
+@property (nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorInput> output;
+@property (nonatomic) ___FILEBASENAMEASIDENTIFIER___Router *router;
 @end
+NS_ASSUME_NONNULL_END

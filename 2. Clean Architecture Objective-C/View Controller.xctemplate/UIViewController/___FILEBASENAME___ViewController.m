@@ -9,23 +9,20 @@
 #import "___FILEBASENAME___ViewController.h"
 #import "___FILEBASENAME___BoundaryModels.h"
 #import "___FILEBASENAME___Router.h"
-#import "___FILEBASENAMEASIDENTIFIER___Configurator.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ViewController ()
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___ViewController
-#pragma mark Object lifecycle
-- (___FILEBASENAMEASIDENTIFIER___Configurator *)configurator {
-    if (_configurator == nil) {
-        _configurator = [___FILEBASENAMEASIDENTIFIER___Configurator new];
-    }
-    return _configurator;
+#pragma mark ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable
++ (instancetype)viewControllerConfigured {
+    return [___FILEBASENAMEASIDENTIFIER___Configurator viewControllerConfigured];
 }
 
+#pragma mark Object lifecycle
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self.configurator configureViewController:self];
+    [___FILEBASENAMEASIDENTIFIER___Configurator configureViewController:self];
 }
 
 #pragma mark View lifecycle

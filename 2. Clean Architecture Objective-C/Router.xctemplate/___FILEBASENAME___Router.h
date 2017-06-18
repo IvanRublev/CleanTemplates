@@ -13,7 +13,9 @@
 /**
     Class to route to new view controller when it's needed to display something that current view controller is not responsible for.
  */
+NS_ASSUME_NONNULL_BEGIN
 @interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject
 @property (nonatomic, weak, nullable) ___FILEBASENAMEASIDENTIFIER___ViewController *viewController;
-- (void)passDataBetweenScenesOfSegue:(nonnull UIStoryboardSegue *)segue;
+- (void)passDataBetweenScenesOfSegue:(UIStoryboardSegue *)segue;
 @end
+NS_ASSUME_NONNULL_END
