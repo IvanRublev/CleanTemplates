@@ -20,7 +20,7 @@
     Class to control the view of the scene.
  */
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController <___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable, ___FILEBASENAMEASIDENTIFIER___PresenterOutput>
+@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
 @property (nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorInput> output;
 @property (nonatomic) ___FILEBASENAMEASIDENTIFIER___Router *router;
 @end

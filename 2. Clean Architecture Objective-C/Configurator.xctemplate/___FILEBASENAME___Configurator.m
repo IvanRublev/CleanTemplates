@@ -14,13 +14,7 @@
 
 @implementation ___FILEBASENAMEASIDENTIFIER___Configurator
 
-+ (___FILEBASENAMEASIDENTIFIER___ViewController *)viewControllerConfigured {
-    ___FILEBASENAMEASIDENTIFIER___ViewController *viewController = [___FILEBASENAMEASIDENTIFIER___ViewController new];
-    [self configureViewController:viewController];
-    return viewController;
-}
-
-+ (void)configureViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
++ (void)injectDependenciesForViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
     ___FILEBASENAMEASIDENTIFIER___Router *router = [___FILEBASENAMEASIDENTIFIER___Router new];
     router.viewController = viewController;
     

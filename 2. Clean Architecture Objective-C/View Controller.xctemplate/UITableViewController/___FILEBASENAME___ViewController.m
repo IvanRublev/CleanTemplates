@@ -15,15 +15,19 @@
 @end
 
 @implementation ___FILEBASENAMEASIDENTIFIER___ViewController
-#pragma mark ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable
-+ (instancetype)viewControllerConfigured {
-    return [___FILEBASENAMEASIDENTIFIER___Configurator viewControllerConfigured];
+#pragma mark Object lifecycle
+- (instancetype)init {
+    if ((self = [super initWithNibName:nil bundle:nil])) {
+        [___FILEBASENAMEASIDENTIFIER___Configurator injectDependenciesForViewController:self];
+    }
+    return self;
 }
 
-#pragma mark Object lifecycle
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [___FILEBASENAMEASIDENTIFIER___Configurator configureViewController:self];
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super initWithCoder:aDecoder])) {
+        [___FILEBASENAMEASIDENTIFIER___Configurator injectDependenciesForViewController:self];
+    }
+    return self;
 }
 
 #pragma mark View lifecycle

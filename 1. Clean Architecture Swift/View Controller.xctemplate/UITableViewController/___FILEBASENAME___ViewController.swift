@@ -11,21 +11,22 @@ import UIKit
 /**
     Class to control the table view of the scene.
  */
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable, ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController, ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
     var output: ___FILEBASENAMEASIDENTIFIER___InteractorInput!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
     
-    // MARK: ___FILEBASENAMEASIDENTIFIER___ViewControllerConfigurable
-    static func viewControllerConfigured() -> ___FILEBASENAMEASIDENTIFIER___ViewController {
-        return ___FILEBASENAMEASIDENTIFIER___Configurator.viewControllerConfigured()
-    }
     
     // MARK: Object lifecycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        ___FILEBASENAMEASIDENTIFIER___Configurator.configure(viewController: self)
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        ___FILEBASENAMEASIDENTIFIER___Configurator.inject(dependenciesFor: self)
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        ___FILEBASENAMEASIDENTIFIER___Configurator.inject(dependenciesFor: self)
+    }
+
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
