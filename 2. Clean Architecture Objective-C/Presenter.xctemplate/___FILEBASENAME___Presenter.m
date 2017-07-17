@@ -6,16 +6,16 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___Presenter.h"
-#import "___FILEBASENAME___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Presenter.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Presenter ()
+@interface ___VARIABLE_sceneName:identifier___Presenter ()
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Presenter
+@implementation ___VARIABLE_sceneName:identifier___Presenter
 #pragma mark Presentation logic
-- (void)presentSomethingWithResponse:(___FILEBASENAMEASIDENTIFIER___Response *)response {
-    ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *viewModel = [[___FILEBASENAMEASIDENTIFIER___ResponseViewModel alloc] init];
+- (void)presentSomethingWithResponse:(___VARIABLE_sceneName:identifier___Response *)response {
+    ___VARIABLE_sceneName:identifier___ResponseViewModel *viewModel = [[___VARIABLE_sceneName:identifier___ResponseViewModel alloc] init];
     [self.output displaySomethingWithViewModel:viewModel];
 }
 

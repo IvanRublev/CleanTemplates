@@ -11,7 +11,7 @@ import UIKit
 /**
     Structures that View Controller, Interactor and Presenter pass over boundary interfaces from one to other.
  */
-struct ___FILEBASENAMEASIDENTIFIER___ {
+struct ___VARIABLE_sceneName:identifier___ {
     struct Request {
         
     }

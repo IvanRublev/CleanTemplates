@@ -8,13 +8,13 @@
 
 @import UIKit;
 
-@class ___FILEBASENAMEASIDENTIFIER___ViewController;
+@class ___VARIABLE_sceneName:identifier___ViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 /**
     Class to build view controller dependency tree. Makes and links ViewController, Interactor, and Presenter objects.
  */
-@interface ___FILEBASENAMEASIDENTIFIER___Configurator: NSObject
-+ (void)injectDependenciesForViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController;
+@interface ___VARIABLE_sceneName:identifier___Configurator: NSObject
++ (void)injectDependenciesForViewController:(___VARIABLE_sceneName:identifier___ViewController *)viewController;
 @end
 NS_ASSUME_NONNULL_END

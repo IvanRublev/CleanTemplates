@@ -8,14 +8,14 @@
 
 @import UIKit;
 
-@class ___FILEBASENAMEASIDENTIFIER___ViewController;
+@class ___VARIABLE_sceneName:identifier___ViewController;
 
 /**
     Class to route to new view controller when it's needed to display something that current view controller is not responsible for.
  */
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___Router: NSObject
-@property (nonatomic, weak, nullable) ___FILEBASENAMEASIDENTIFIER___ViewController *viewController;
+@interface ___VARIABLE_sceneName:identifier___Router: NSObject
+@property (nonatomic, weak, nullable) ___VARIABLE_sceneName:identifier___ViewController *viewController;
 - (void)passDataBetweenScenesOfSegue:(UIStoryboardSegue *)segue;
 @end
 NS_ASSUME_NONNULL_END

@@ -7,18 +7,18 @@
 //
 
 @import XCTest;
-#import "___FILEBASENAMEASIDENTIFIER___ViewController.h"
-#import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___ViewController.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
 #pragma mark Mock
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorInput>
-@property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___Request *receivedRequest;
+@interface ___VARIABLE_sceneName:identifier___ViewControllerOutputMock: NSObject <___VARIABLE_sceneName:identifier___InteractorInput>
+@property (nonatomic, nullable) ___VARIABLE_sceneName:identifier___Request *receivedRequest;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock
+@implementation ___VARIABLE_sceneName:identifier___ViewControllerOutputMock
 
-- (void)doSomethingWithRequest:(___FILEBASENAMEASIDENTIFIER___Request *)request {
+- (void)doSomethingWithRequest:(___VARIABLE_sceneName:identifier___Request *)request {
     self.receivedRequest = request;
 }
 
@@ -27,18 +27,18 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Class
-@interface ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___ViewController *viewController;
+@interface ___VARIABLE_sceneName:identifier___ViewControllerTests: XCTestCase
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___ViewController *viewController;
 @property (nonatomic, nullable) UIWindow *window;
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock *output;
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___ViewControllerOutputMock *output;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___ViewControllerTests
+@implementation ___VARIABLE_sceneName:identifier___ViewControllerTests
 #pragma mark Test lifecycle
 - (void)setUp {
     [super setUp];
     self.window = [UIWindow new];
-    [self setup___FILEBASENAMEASIDENTIFIER___ViewController];
+    [self setup___VARIABLE_sceneName:identifier___ViewController];
 }
 
 - (void)tearDown {
@@ -47,11 +47,11 @@ NS_ASSUME_NONNULL_END
 }
 
 #pragma mark Test setup
-- (void)setup___FILEBASENAMEASIDENTIFIER___ViewController {
+- (void)setup___VARIABLE_sceneName:identifier___ViewController {
     NSBundle *bundle = [NSBundle mainBundle];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: bundle];
-    self.viewController = (___FILEBASENAMEASIDENTIFIER___ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"___FILEBASENAMEASIDENTIFIER___ViewController"];
-    self.output = [___FILEBASENAMEASIDENTIFIER___ViewControllerOutputMock new];
+    self.viewController = (___VARIABLE_sceneName:identifier___ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"___VARIABLE_sceneName:identifier___ViewController"];
+    self.output = [___VARIABLE_sceneName:identifier___ViewControllerOutputMock new];
     self.viewController.output = self.output;
 }
 
@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_END
 
 - (void)testDisplaySomething {
     // Given
-    ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *viewModel = [[___FILEBASENAMEASIDENTIFIER___ResponseViewModel alloc] init];
+    ___VARIABLE_sceneName:identifier___ResponseViewModel *viewModel = [[___VARIABLE_sceneName:identifier___ResponseViewModel alloc] init];
     
     // When
     [self.viewController displaySomethingWithViewModel:viewModel];

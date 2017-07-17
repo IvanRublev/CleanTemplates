@@ -6,26 +6,26 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___ViewController.h"
-#import "___FILEBASENAME___BoundaryModels.h"
-#import "___FILEBASENAME___Router.h"
-#import "___FILEBASENAMEASIDENTIFIER___Configurator.h"
+#import "___VARIABLE_sceneName:identifier___ViewController.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Router.h"
+#import "___VARIABLE_sceneName:identifier___Configurator.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___ViewController ()
+@interface ___VARIABLE_sceneName:identifier___ViewController ()
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___ViewController
+@implementation ___VARIABLE_sceneName:identifier___ViewController
 #pragma mark Object lifecycle
 - (instancetype)init {
     if ((self = [super initWithNibName:nil bundle:nil])) {
-        [___FILEBASENAMEASIDENTIFIER___Configurator injectDependenciesForViewController:self];
+        [___VARIABLE_sceneName:identifier___Configurator injectDependenciesForViewController:self];
     }
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if ((self = [super initWithCoder:aDecoder])) {
-        [___FILEBASENAMEASIDENTIFIER___Configurator injectDependenciesForViewController:self];
+        [___VARIABLE_sceneName:identifier___Configurator injectDependenciesForViewController:self];
     }
     return self;
 }
@@ -39,12 +39,12 @@
 #pragma mark Event handling
 - (void)doSomethingOnAppear {
     // NOTE: Ask the Interactor to do some work
-    ___FILEBASENAMEASIDENTIFIER___Request *request = [[___FILEBASENAMEASIDENTIFIER___Request alloc] init];
+    ___VARIABLE_sceneName:identifier___Request *request = [[___VARIABLE_sceneName:identifier___Request alloc] init];
     [self.output doSomethingWithRequest:request];
 }
 
 #pragma mark Display logic
-- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel {
+- (void)displaySomethingWithViewModel:(___VARIABLE_sceneName:identifier___ResponseViewModel *)viewModel {
     // NOTE: Display the result from the Presenter
     
     // nameTextField.text = viewModel.name

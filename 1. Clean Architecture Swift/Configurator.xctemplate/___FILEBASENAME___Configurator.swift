@@ -11,19 +11,19 @@ import UIKit
 /**
     Class to build view controller's dependency tree. Makes and links ViewController, Interactor, and Presenter objects.
  */
-class ___FILEBASENAMEASIDENTIFIER___Configurator {
-    static func inject(dependenciesFor viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
+class ___VARIABLE_sceneName:identifier___Configurator {
+    static func inject(dependenciesFor viewController: ___VARIABLE_sceneName:identifier___ViewController) {
         if viewController.output != nil {
             return
         }
         
-        let router = ___FILEBASENAMEASIDENTIFIER___Router()
+        let router = ___VARIABLE_sceneName:identifier___Router()
         router.viewController = viewController
         
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
+        let presenter = ___VARIABLE_sceneName:identifier___Presenter()
         presenter.output = viewController
         
-        let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+        let interactor = ___VARIABLE_sceneName:identifier___Interactor()
         interactor.output = presenter
         
         viewController.output = interactor

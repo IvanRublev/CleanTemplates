@@ -6,21 +6,21 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___Interactor.h"
-#import "___FILEBASENAME___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
-@interface ___FILEBASENAMEASIDENTIFIER___Interactor ()
+@interface ___VARIABLE_sceneName:identifier___Interactor ()
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Interactor
+@implementation ___VARIABLE_sceneName:identifier___Interactor
 #pragma mark Business logic
-- (void)doSomethingWithRequest:(___FILEBASENAMEASIDENTIFIER___Request *)request {
+- (void)doSomethingWithRequest:(___VARIABLE_sceneName:identifier___Request *)request {
     // NOTE: Create some Entity to do the work
-    //___FILEBASENAMEASIDENTIFIER___Worker *entity = [___FILEBASENAMEASIDENTIFIER___Worker new];
+    //___VARIABLE_sceneName:identifier___Worker *entity = [___VARIABLE_sceneName:identifier___Worker new];
     //[entity doSomeWork];
     
     // NOTE: Init a response with the appropriate method then pass the result to the Presenter
-    ___FILEBASENAMEASIDENTIFIER___Response *response = [[___FILEBASENAMEASIDENTIFIER___Response alloc] init];
+    ___VARIABLE_sceneName:identifier___Response *response = [[___VARIABLE_sceneName:identifier___Response alloc] init];
     [self.output presentSomethingWithResponse:response];
 }
 

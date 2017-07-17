@@ -8,21 +8,21 @@
 
 @import UIKit;
 
-@class ___FILEBASENAMEASIDENTIFIER___Request, ___FILEBASENAMEASIDENTIFIER___Response;
+@class ___VARIABLE_sceneName:identifier___Request, ___VARIABLE_sceneName:identifier___Response;
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput
-- (void)doSomethingWithRequest:(___FILEBASENAMEASIDENTIFIER___Request *)request;
+@protocol ___VARIABLE_sceneName:identifier___InteractorInput
+- (void)doSomethingWithRequest:(___VARIABLE_sceneName:identifier___Request *)request;
 @end
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput
-- (void)presentSomethingWithResponse:(___FILEBASENAMEASIDENTIFIER___Response *)response;
+@protocol ___VARIABLE_sceneName:identifier___InteractorOutput
+- (void)presentSomethingWithResponse:(___VARIABLE_sceneName:identifier___Response *)response;
 @end
 
 /**
     Class to <#business#>.
  */
-@interface ___FILEBASENAMEASIDENTIFIER___Interactor: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorInput>
-@property (nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorOutput> output;
+@interface ___VARIABLE_sceneName:identifier___Interactor: NSObject <___VARIABLE_sceneName:identifier___InteractorInput>
+@property (nonatomic) id<___VARIABLE_sceneName:identifier___InteractorOutput> output;
 @end
 NS_ASSUME_NONNULL_END

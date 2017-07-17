@@ -8,18 +8,18 @@
 
 @import Quick;
 @import Nimble;
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
-#import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
 #pragma mark Mock
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorOutput>
-@property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___Response *receivedResponse;
+@interface ___VARIABLE_sceneName:identifier___InteractorOutputMock: NSObject <___VARIABLE_sceneName:identifier___InteractorOutput>
+@property (nonatomic, nullable) ___VARIABLE_sceneName:identifier___Response *receivedResponse;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock
+@implementation ___VARIABLE_sceneName:identifier___InteractorOutputMock
 
-- (void)presentSomethingWithResponse:(___FILEBASENAMEASIDENTIFIER___Response *)response {
+- (void)presentSomethingWithResponse:(___VARIABLE_sceneName:identifier___Response *)response {
     self.receivedResponse = response;
 }
 
@@ -28,21 +28,21 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Spec
-QuickSpecBegin(___FILEBASENAMEASIDENTIFIER___InteractorTests)
+QuickSpecBegin(___VARIABLE_sceneName:identifier___InteractorTests)
 
-__block ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = nil;
-__block ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock *output = nil;
+__block ___VARIABLE_sceneName:identifier___Interactor *interactor = nil;
+__block ___VARIABLE_sceneName:identifier___InteractorOutputMock *output = nil;
 beforeEach(^{
-    interactor = [___FILEBASENAMEASIDENTIFIER___Interactor new];
-    output = [___FILEBASENAMEASIDENTIFIER___InteractorOutputMock new];
+    interactor = [___VARIABLE_sceneName:identifier___Interactor new];
+    output = [___VARIABLE_sceneName:identifier___InteractorOutputMock new];
     interactor.output = output;
 });
 
 describe(@"Asked to do something", ^{
-    __block ___FILEBASENAMEASIDENTIFIER___Request *request = nil;
+    __block ___VARIABLE_sceneName:identifier___Request *request = nil;
     
     beforeEach(^{
-        request = [[___FILEBASENAMEASIDENTIFIER___Request alloc] init];
+        request = [[___VARIABLE_sceneName:identifier___Request alloc] init];
         
         [interactor doSomethingWithRequest:request];
     });

@@ -6,22 +6,22 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___Configurator.h"
-#import "___FILEBASENAME___ViewController.h"
-#import "___FILEBASENAME___Router.h"
-#import "___FILEBASENAME___Interactor.h"
-#import "___FILEBASENAME___Presenter.h"
+#import "___VARIABLE_sceneName:identifier___Configurator.h"
+#import "___VARIABLE_sceneName:identifier___ViewController.h"
+#import "___VARIABLE_sceneName:identifier___Router.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___Presenter.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Configurator
+@implementation ___VARIABLE_sceneName:identifier___Configurator
 
-+ (void)injectDependenciesForViewController:(___FILEBASENAMEASIDENTIFIER___ViewController *)viewController {
-    ___FILEBASENAMEASIDENTIFIER___Router *router = [___FILEBASENAMEASIDENTIFIER___Router new];
++ (void)injectDependenciesForViewController:(___VARIABLE_sceneName:identifier___ViewController *)viewController {
+    ___VARIABLE_sceneName:identifier___Router *router = [___VARIABLE_sceneName:identifier___Router new];
     router.viewController = viewController;
     
-    ___FILEBASENAMEASIDENTIFIER___Presenter *presenter = [___FILEBASENAMEASIDENTIFIER___Presenter new];
+    ___VARIABLE_sceneName:identifier___Presenter *presenter = [___VARIABLE_sceneName:identifier___Presenter new];
     presenter.output = viewController;
     
-    ___FILEBASENAMEASIDENTIFIER___Interactor *interactor = [___FILEBASENAMEASIDENTIFIER___Interactor new];
+    ___VARIABLE_sceneName:identifier___Interactor *interactor = [___VARIABLE_sceneName:identifier___Interactor new];
     interactor.output = presenter;
     
     viewController.output = interactor;

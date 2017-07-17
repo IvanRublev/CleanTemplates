@@ -6,11 +6,11 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___Router.h"
-#import "___FILEBASENAME___BoundaryModels.h"
-#import "___FILEBASENAME___ViewController.h"
+#import "___VARIABLE_sceneName:identifier___Router.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___ViewController.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Router
+@implementation ___VARIABLE_sceneName:identifier___Router
 #pragma mark Manual navigation
 - (void)navigateToSomewhere {
     // NOTE: Teach the router how to navigate to another scene. Some examples follow:

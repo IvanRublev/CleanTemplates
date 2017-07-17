@@ -6,9 +6,9 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import "___FILEBASENAME___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Request
+@implementation ___VARIABLE_sceneName:identifier___Request
 
 - (instancetype)initWithSomeProperty:(NSDate *)someProperty {
     if ((self = [super init])) {
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___Response
+@implementation ___VARIABLE_sceneName:identifier___Response
 
 - (instancetype)initWithSomeProperty:(NSNumber *)someProperty {
     if ((self = [super init])) {
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___ResponseViewModel
+@implementation ___VARIABLE_sceneName:identifier___ResponseViewModel
 
 - (instancetype)initWithSomeProperty:(NSString *)someProperty {
     if ((self = [super init])) {

@@ -9,16 +9,16 @@
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
+class ___VARIABLE_sceneName:identifier___ViewControllerTests: XCTestCase {
     // MARK: Subject under test
-    var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
+    var viewController: ___VARIABLE_sceneName:identifier___ViewController!
     var window: UIWindow!
     
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-        var receivedRequest: ___FILEBASENAMEASIDENTIFIER___.Request?
+    class OutputMock: ___VARIABLE_sceneName:identifier___InteractorInput {
+        var receivedRequest: ___VARIABLE_sceneName:identifier___.Request?
         
-        func doSomething(_ request: ___FILEBASENAMEASIDENTIFIER___.Request) {
+        func doSomething(_ request: ___VARIABLE_sceneName:identifier___.Request) {
             receivedRequest = request
         }
     }
@@ -29,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         window = UIWindow()
-        setup___FILEBASENAMEASIDENTIFIER___ViewController()
+        setup___VARIABLE_sceneName:identifier___ViewController()
     }
     
     override func tearDown() {
@@ -38,10 +38,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
     }
     
     // MARK: Test setup
-    func setup___FILEBASENAMEASIDENTIFIER___ViewController() {
+    func setup___VARIABLE_sceneName:identifier___ViewController() {
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-        viewController = storyboard.instantiateViewController(withIdentifier: "___FILEBASENAMEASIDENTIFIER___ViewController") as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        viewController = storyboard.instantiateViewController(withIdentifier: "___VARIABLE_sceneName:identifier___ViewController") as! ___VARIABLE_sceneName:identifier___ViewController
 
         output = OutputMock()
         viewController.output = output
@@ -63,7 +63,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
     
     func testDisplaySomething() {
         // Given
-        let viewModel = ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel()
+        let viewModel = ___VARIABLE_sceneName:identifier___.Response.ViewModel()
         
         // When
         viewController.displaySomething(viewModel)

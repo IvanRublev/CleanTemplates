@@ -10,31 +10,31 @@
 import Quick
 import Nimble
 
-class ___FILEBASENAMEASIDENTIFIER___PresenterTests: QuickSpec {
+class ___VARIABLE_sceneName:identifier___PresenterTests: QuickSpec {
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-        var receivedViewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel?
+    class OutputMock: ___VARIABLE_sceneName:identifier___PresenterOutput {
+        var receivedViewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel?
         
-        func displaySomething(_ viewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel) {
+        func displaySomething(_ viewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel) {
             receivedViewModel = viewModel
         }
     }
 
     override func spec() {
-        var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
+        var presenter: ___VARIABLE_sceneName:identifier___Presenter!
         var output: OutputMock!
         
         beforeEach {
-            presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
+            presenter = ___VARIABLE_sceneName:identifier___Presenter()
             output = OutputMock()
             
             presenter.output = output
         }
         describe("Asked to present something") {
-            var response: ___FILEBASENAMEASIDENTIFIER___.Response!
+            var response: ___VARIABLE_sceneName:identifier___.Response!
             
             beforeEach {
-                response = ___FILEBASENAMEASIDENTIFIER___.Response()
+                response = ___VARIABLE_sceneName:identifier___.Response()
                 
                 presenter.presentSomething(response)
             }

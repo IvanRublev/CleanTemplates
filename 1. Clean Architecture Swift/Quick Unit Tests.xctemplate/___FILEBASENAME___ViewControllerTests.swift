@@ -10,12 +10,12 @@
 import Quick
 import Nimble
 
-class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
+class ___VARIABLE_sceneName:identifier___ViewControllerTests: QuickSpec {
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-        var receivedRequest: ___FILEBASENAMEASIDENTIFIER___.Request?
+    class OutputMock: ___VARIABLE_sceneName:identifier___InteractorInput {
+        var receivedRequest: ___VARIABLE_sceneName:identifier___.Request?
         
-        func doSomething(_ request: ___FILEBASENAMEASIDENTIFIER___.Request) {
+        func doSomething(_ request: ___VARIABLE_sceneName:identifier___.Request) {
             receivedRequest = request
         }
     }
@@ -25,10 +25,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
 
-        var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController!
+        var viewController: ___VARIABLE_sceneName:identifier___ViewController!
         var output: OutputMock!
         beforeEach {
-            viewController = storyboard.instantiateViewController(withIdentifier: "___FILEBASENAMEASIDENTIFIER___ViewController") as! ___FILEBASENAMEASIDENTIFIER___ViewController
+            viewController = storyboard.instantiateViewController(withIdentifier: "___VARIABLE_sceneName:identifier___ViewController") as! ___VARIABLE_sceneName:identifier___ViewController
             output = OutputMock()
             
             viewController.output = output
@@ -50,10 +50,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: QuickSpec {
             }
         }
         describe("Asked to display something") {
-            var viewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel!
+            var viewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel!
             
             beforeEach {
-                viewModel = ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel()
+                viewModel = ___VARIABLE_sceneName:identifier___.Response.ViewModel()
                 
                 viewController.displaySomething(viewModel)
             }

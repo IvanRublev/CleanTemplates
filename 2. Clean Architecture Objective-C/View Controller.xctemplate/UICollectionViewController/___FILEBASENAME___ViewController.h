@@ -7,21 +7,21 @@
 //
 
 @import UIKit;
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
-#import "___FILEBASENAMEASIDENTIFIER___Configurator.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___Presenter.h"
+#import "___VARIABLE_sceneName:identifier___Configurator.h"
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput;
-@protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput;
+@protocol ___VARIABLE_sceneName:identifier___InteractorInput;
+@protocol ___VARIABLE_sceneName:identifier___PresenterOutput;
 
-@class ___FILEBASENAMEASIDENTIFIER___Router;
+@class ___VARIABLE_sceneName:identifier___Router;
 
 /**
     Class to control the collection view of the scene.
  */
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
-@property (nonatomic) id<___FILEBASENAMEASIDENTIFIER___InteractorInput> output;
-@property (nonatomic) ___FILEBASENAMEASIDENTIFIER___Router *router;
+@interface ___VARIABLE_sceneName:identifier___ViewController: UICollectionViewController <___VARIABLE_sceneName:identifier___PresenterOutput>
+@property (nonatomic) id<___VARIABLE_sceneName:identifier___InteractorInput> output;
+@property (nonatomic) ___VARIABLE_sceneName:identifier___Router *router;
 @end
 NS_ASSUME_NONNULL_END

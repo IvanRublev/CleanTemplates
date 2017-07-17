@@ -12,17 +12,17 @@
     Structures that View Controller, Interactor and Presenter pass over boundary interfaces from one to other.
  */
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___Request: NSObject
+@interface ___VARIABLE_sceneName:identifier___Request: NSObject
 @property (nonatomic, copy, readonly, nullable) NSDate *someProperty;
 - (instancetype)initWithSomeProperty:(nullable NSDate *)someProperty;
 @end
 
-@interface ___FILEBASENAMEASIDENTIFIER___Response: NSObject
+@interface ___VARIABLE_sceneName:identifier___Response: NSObject
 @property (nonatomic, copy, readonly, nullable) NSNumber *someProperty;
 - (instancetype)initWithSomeProperty:(nullable NSNumber *)someProperty;
 @end
 
-@interface ___FILEBASENAMEASIDENTIFIER___ResponseViewModel: NSObject
+@interface ___VARIABLE_sceneName:identifier___ResponseViewModel: NSObject
 @property (nonatomic, copy, readonly, nullable) NSString *someProperty;
 - (instancetype)initWithSomeProperty:(nullable NSString *)someProperty;
 @end

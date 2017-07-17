@@ -10,31 +10,31 @@
 import Quick
 import Nimble
 
-class ___FILEBASENAMEASIDENTIFIER___InteractorTests: QuickSpec {
+class ___VARIABLE_sceneName:identifier___InteractorTests: QuickSpec {
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-        var receivedResponse: ___FILEBASENAMEASIDENTIFIER___.Response?
+    class OutputMock: ___VARIABLE_sceneName:identifier___InteractorOutput {
+        var receivedResponse: ___VARIABLE_sceneName:identifier___.Response?
         
-        func presentSomething(_ response: ___FILEBASENAMEASIDENTIFIER___.Response) {
+        func presentSomething(_ response: ___VARIABLE_sceneName:identifier___.Response) {
             receivedResponse = response
         }
     }
 
     override func spec() {
-        var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor!
+        var interactor: ___VARIABLE_sceneName:identifier___Interactor!
         var output: OutputMock!
 
         beforeEach {
-            interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+            interactor = ___VARIABLE_sceneName:identifier___Interactor()
             output = OutputMock()
 
             interactor.output = output
         }
         describe("Asked to do something") {
-            var request: ___FILEBASENAMEASIDENTIFIER___.Request!
+            var request: ___VARIABLE_sceneName:identifier___.Request!
             
             beforeEach {
-                request = ___FILEBASENAMEASIDENTIFIER___.Request()
+                request = ___VARIABLE_sceneName:identifier___.Request()
                 
                 interactor.doSomething(request)
             }

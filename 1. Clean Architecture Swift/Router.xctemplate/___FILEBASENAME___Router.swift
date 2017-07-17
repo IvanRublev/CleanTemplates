@@ -11,8 +11,8 @@ import UIKit
 /**
     Class to route to new view controller when it's needed to display something that current view controller is not responsible for.
  */
-class ___FILEBASENAMEASIDENTIFIER___Router {
-    weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController?
+class ___VARIABLE_sceneName:identifier___Router {
+    weak var viewController: ___VARIABLE_sceneName:identifier___ViewController?
     
     // MARK: Manual navigation
     func navigateToSomewhere() {
@@ -49,7 +49,7 @@ class ___FILEBASENAMEASIDENTIFIER___Router {
 }
 
 // MARK: - Pass segue event to router for scene communication.
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_sceneName:identifier___ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         router.passDataBetweenScenes(of: segue)
     }

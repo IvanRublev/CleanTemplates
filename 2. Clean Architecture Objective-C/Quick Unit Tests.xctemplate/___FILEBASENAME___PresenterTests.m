@@ -8,18 +8,18 @@
 
 @import Quick;
 @import Nimble;
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
-#import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Presenter.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
 #pragma mark Mock
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
-@property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *receivedViewModel;
+@interface ___VARIABLE_sceneName:identifier___PresenterOutputMock: NSObject <___VARIABLE_sceneName:identifier___PresenterOutput>
+@property (nonatomic, nullable) ___VARIABLE_sceneName:identifier___ResponseViewModel *receivedViewModel;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock
+@implementation ___VARIABLE_sceneName:identifier___PresenterOutputMock
 
-- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel {
+- (void)displaySomethingWithViewModel:(___VARIABLE_sceneName:identifier___ResponseViewModel *)viewModel {
     self.receivedViewModel = viewModel;
 }
 
@@ -28,21 +28,21 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Spec
-QuickSpecBegin(___FILEBASENAMEASIDENTIFIER___PresenterTests)
+QuickSpecBegin(___VARIABLE_sceneName:identifier___PresenterTests)
 
-__block ___FILEBASENAMEASIDENTIFIER___Presenter *presenter = nil;
-__block ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock *output = nil;
+__block ___VARIABLE_sceneName:identifier___Presenter *presenter = nil;
+__block ___VARIABLE_sceneName:identifier___PresenterOutputMock *output = nil;
 beforeEach(^{
-    presenter = [___FILEBASENAMEASIDENTIFIER___Presenter new];
-    output = [___FILEBASENAMEASIDENTIFIER___PresenterOutputMock new];
+    presenter = [___VARIABLE_sceneName:identifier___Presenter new];
+    output = [___VARIABLE_sceneName:identifier___PresenterOutputMock new];
     presenter.output = output;
 });
 
 describe(@"Asked to present something", ^{
-    __block ___FILEBASENAMEASIDENTIFIER___Response *response;
+    __block ___VARIABLE_sceneName:identifier___Response *response;
     
     beforeEach(^{
-        response = [[___FILEBASENAMEASIDENTIFIER___Response alloc] init];
+        response = [[___VARIABLE_sceneName:identifier___Response alloc] init];
         
         [presenter presentSomethingWithResponse:response];
     });

@@ -7,18 +7,18 @@
 //
 
 @import XCTest;
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
-#import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
 #pragma mark Mock
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorOutput>
-@property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___Response *receivedResponse;
+@interface ___VARIABLE_sceneName:identifier___InteractorOutputMock: NSObject <___VARIABLE_sceneName:identifier___InteractorOutput>
+@property (nonatomic, nullable) ___VARIABLE_sceneName:identifier___Response *receivedResponse;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock
+@implementation ___VARIABLE_sceneName:identifier___InteractorOutputMock
 
-- (void)presentSomethingWithResponse:(___FILEBASENAMEASIDENTIFIER___Response *)response {
+- (void)presentSomethingWithResponse:(___VARIABLE_sceneName:identifier___Response *)response {
     self.receivedResponse = response;
 }
 
@@ -27,16 +27,16 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Class
-@interface ___FILEBASENAMEASIDENTIFIER___InteractorTests : XCTestCase
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Interactor *interactor;
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___InteractorOutputMock *output;
+@interface ___VARIABLE_sceneName:identifier___InteractorTests : XCTestCase
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___Interactor *interactor;
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___InteractorOutputMock *output;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___InteractorTests
+@implementation ___VARIABLE_sceneName:identifier___InteractorTests
 #pragma mark Test lifecycle
 - (void)setUp {
     [super setUp];
-    [self setup___FILEBASENAMEASIDENTIFIER___Interactor];
+    [self setup___VARIABLE_sceneName:identifier___Interactor];
 }
 
 - (void)tearDown {
@@ -44,16 +44,16 @@ NS_ASSUME_NONNULL_END
 }
 
 #pragma mark Test setup
-- (void)setup___FILEBASENAMEASIDENTIFIER___Interactor {
-    self.interactor = [___FILEBASENAMEASIDENTIFIER___Interactor new];
-    self.output = [___FILEBASENAMEASIDENTIFIER___InteractorOutputMock new];
+- (void)setup___VARIABLE_sceneName:identifier___Interactor {
+    self.interactor = [___VARIABLE_sceneName:identifier___Interactor new];
+    self.output = [___VARIABLE_sceneName:identifier___InteractorOutputMock new];
     self.interactor.output = self.output;
 }
 
 #pragma mark Tests
 - (void)testDoSomething {
     // Given
-    ___FILEBASENAMEASIDENTIFIER___Request *request = [[___FILEBASENAMEASIDENTIFIER___Request alloc] init];
+    ___VARIABLE_sceneName:identifier___Request *request = [[___VARIABLE_sceneName:identifier___Request alloc] init];
     
     // When
     [self.interactor doSomethingWithRequest:request];

@@ -9,15 +9,15 @@
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
+class ___VARIABLE_sceneName:identifier___PresenterTests: XCTestCase {
     // MARK: Subject under test
-    var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter!
+    var presenter: ___VARIABLE_sceneName:identifier___Presenter!
     
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-        var receivedViewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel?
+    class OutputMock: ___VARIABLE_sceneName:identifier___PresenterOutput {
+        var receivedViewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel?
         
-        func displaySomething(_ viewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel) {
+        func displaySomething(_ viewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel) {
             receivedViewModel = viewModel
         }
     }
@@ -27,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
     // MARK: Test lifecycle
     override func setUp() {
         super.setUp()
-        setup___FILEBASENAMEASIDENTIFIER___Presenter()
+        setup___VARIABLE_sceneName:identifier___Presenter()
     }
     
     override func tearDown() {
@@ -35,8 +35,8 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
     }
     
     // MARK: Test setup
-    func setup___FILEBASENAMEASIDENTIFIER___Presenter() {
-        presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
+    func setup___VARIABLE_sceneName:identifier___Presenter() {
+        presenter = ___VARIABLE_sceneName:identifier___Presenter()
         
         output = OutputMock()
         presenter.output = output
@@ -45,7 +45,7 @@ class ___FILEBASENAMEASIDENTIFIER___PresenterTests: XCTestCase {
     // MARK: Tests
     func testPresentSomething() {
         // Given
-        let response = ___FILEBASENAMEASIDENTIFIER___.Response()
+        let response = ___VARIABLE_sceneName:identifier___.Response()
         
         // When
         presenter.presentSomething(response)

@@ -7,18 +7,18 @@
 //
 
 @import XCTest;
-#import "___FILEBASENAMEASIDENTIFIER___Presenter.h"
-#import "___FILEBASENAMEASIDENTIFIER___BoundaryModels.h"
+#import "___VARIABLE_sceneName:identifier___Presenter.h"
+#import "___VARIABLE_sceneName:identifier___BoundaryModels.h"
 
 #pragma mark Mock
 NS_ASSUME_NONNULL_BEGIN
-@interface ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock: NSObject <___FILEBASENAMEASIDENTIFIER___PresenterOutput>
-@property (nonatomic, nullable) ___FILEBASENAMEASIDENTIFIER___ResponseViewModel *receivedViewModel;
+@interface ___VARIABLE_sceneName:identifier___PresenterOutputMock: NSObject <___VARIABLE_sceneName:identifier___PresenterOutput>
+@property (nonatomic, nullable) ___VARIABLE_sceneName:identifier___ResponseViewModel *receivedViewModel;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock
+@implementation ___VARIABLE_sceneName:identifier___PresenterOutputMock
 
-- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel {
+- (void)displaySomethingWithViewModel:(___VARIABLE_sceneName:identifier___ResponseViewModel *)viewModel {
     self.receivedViewModel = viewModel;
 }
 
@@ -27,16 +27,16 @@ NS_ASSUME_NONNULL_END
 
 #pragma mark -
 #pragma mark Test Class
-@interface ___FILEBASENAMEASIDENTIFIER___PresenterTests : XCTestCase
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___Presenter *presenter;
-@property (nonatomic, nonnull) ___FILEBASENAMEASIDENTIFIER___PresenterOutputMock *output;
+@interface ___VARIABLE_sceneName:identifier___PresenterTests : XCTestCase
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___Presenter *presenter;
+@property (nonatomic, nonnull) ___VARIABLE_sceneName:identifier___PresenterOutputMock *output;
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___PresenterTests
+@implementation ___VARIABLE_sceneName:identifier___PresenterTests
 #pragma mark Test lifecycle
 - (void)setUp {
     [super setUp];
-    [self setup___FILEBASENAMEASIDENTIFIER___Presenter];
+    [self setup___VARIABLE_sceneName:identifier___Presenter];
 }
 
 - (void)tearDown {
@@ -44,16 +44,16 @@ NS_ASSUME_NONNULL_END
 }
 
 #pragma mark Test setup
-- (void)setup___FILEBASENAMEASIDENTIFIER___Presenter {
-    self.presenter = [___FILEBASENAMEASIDENTIFIER___Presenter new];
-    self.output = [___FILEBASENAMEASIDENTIFIER___PresenterOutputMock new];
+- (void)setup___VARIABLE_sceneName:identifier___Presenter {
+    self.presenter = [___VARIABLE_sceneName:identifier___Presenter new];
+    self.output = [___VARIABLE_sceneName:identifier___PresenterOutputMock new];
     self.presenter.output = self.output;
 }
 
 #pragma mark Tests
 - (void)testPresentSomething {
     // Given
-    ___FILEBASENAMEASIDENTIFIER___Response *response = [[___FILEBASENAMEASIDENTIFIER___Response alloc] init];
+    ___VARIABLE_sceneName:identifier___Response *response = [[___VARIABLE_sceneName:identifier___Response alloc] init];
     
     // When
     [self.presenter presentSomethingWithResponse:response];

@@ -7,21 +7,21 @@
 //
 
 @import UIKit;
-#import "___FILEBASENAMEASIDENTIFIER___Interactor.h"
+#import "___VARIABLE_sceneName:identifier___Interactor.h"
 
-@protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput;
+@protocol ___VARIABLE_sceneName:identifier___InteractorOutput;
 
-@class ___FILEBASENAMEASIDENTIFIER___ResponseViewModel;
+@class ___VARIABLE_sceneName:identifier___ResponseViewModel;
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput
-- (void)displaySomethingWithViewModel:(___FILEBASENAMEASIDENTIFIER___ResponseViewModel *)viewModel;
+@protocol ___VARIABLE_sceneName:identifier___PresenterOutput
+- (void)displaySomethingWithViewModel:(___VARIABLE_sceneName:identifier___ResponseViewModel *)viewModel;
 @end
 
 /**
     Class to format the data response from the Interactor and pass the result view model to the View Controller
  */
-@interface ___FILEBASENAMEASIDENTIFIER___Presenter: NSObject <___FILEBASENAMEASIDENTIFIER___InteractorOutput>
-@property (nonatomic, weak, nullable) id<___FILEBASENAMEASIDENTIFIER___PresenterOutput> output;
+@interface ___VARIABLE_sceneName:identifier___Presenter: NSObject <___VARIABLE_sceneName:identifier___InteractorOutput>
+@property (nonatomic, weak, nullable) id<___VARIABLE_sceneName:identifier___PresenterOutput> output;
 @end
 NS_ASSUME_NONNULL_END

@@ -9,15 +9,15 @@
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
+class ___VARIABLE_sceneName:identifier___InteractorTests: XCTestCase {
     // MARK: Subject under test
-    var interactor: ___FILEBASENAMEASIDENTIFIER___Interactor!
+    var interactor: ___VARIABLE_sceneName:identifier___Interactor!
 
     // MARK: Mock
-    class OutputMock: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-        var receivedResponse: ___FILEBASENAMEASIDENTIFIER___.Response?
+    class OutputMock: ___VARIABLE_sceneName:identifier___InteractorOutput {
+        var receivedResponse: ___VARIABLE_sceneName:identifier___.Response?
         
-        func presentSomething(_ response: ___FILEBASENAMEASIDENTIFIER___.Response) {
+        func presentSomething(_ response: ___VARIABLE_sceneName:identifier___.Response) {
             receivedResponse = response
         }
     }
@@ -27,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     // MARK: Test lifecycle
     override func setUp() {
         super.setUp()
-        setup___FILEBASENAMEASIDENTIFIER___Interactor()
+        setup___VARIABLE_sceneName:identifier___Interactor()
     }
     
     override func tearDown() {
@@ -35,8 +35,8 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     }
     
     // MARK: Test setup
-    func setup___FILEBASENAMEASIDENTIFIER___Interactor() {
-        interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
+    func setup___VARIABLE_sceneName:identifier___Interactor() {
+        interactor = ___VARIABLE_sceneName:identifier___Interactor()
         
         output = OutputMock()
         interactor.output = output
@@ -45,7 +45,7 @@ class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
     // MARK: Tests
     func testDoSomething() {
         // Given
-        let request = ___FILEBASENAMEASIDENTIFIER___.Request()
+        let request = ___VARIABLE_sceneName:identifier___.Request()
         
         // When
         interactor.doSomething(request)

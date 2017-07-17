@@ -9,20 +9,20 @@
 import UIKit
 
 // MARK: Boundary protocol
-protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
-    func displaySomething(_ viewModel: ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel)
+protocol ___VARIABLE_sceneName:identifier___PresenterOutput: class {
+    func displaySomething(_ viewModel: ___VARIABLE_sceneName:identifier___.Response.ViewModel)
 }
 
 // MARK: Class
 /**
     Class to format the data response from the Interactor and pass the result view model to the View Controller
  */
-class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput?
+class ___VARIABLE_sceneName:identifier___Presenter: ___VARIABLE_sceneName:identifier___InteractorOutput {
+    weak var output: ___VARIABLE_sceneName:identifier___PresenterOutput?
     
     // MARK: Presentation logic
-    func presentSomething(_ response: ___FILEBASENAMEASIDENTIFIER___.Response) {
-        let viewModel = ___FILEBASENAMEASIDENTIFIER___.Response.ViewModel()
+    func presentSomething(_ response: ___VARIABLE_sceneName:identifier___.Response) {
+        let viewModel = ___VARIABLE_sceneName:identifier___.Response.ViewModel()
         output?.displaySomething(viewModel)
     }
 }
