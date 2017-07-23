@@ -48,7 +48,7 @@
     </dict>
 		<dict>
 			<key>Default</key>
-			<string>UIViewController</string>
+			<string>UIViewController + View</string>
 			<key>Description</key>
 			<string>What view controller class to subclass for the new scene</string>
 			<key>FallbackHeader</key>
@@ -65,6 +65,7 @@
 			<string>class</string>
 			<key>Values</key>
 			<array>
+				<string>UIViewController + View</string>
 				<string>UIViewController</string>
 				<string>UITableViewController</string>
 				<string>UICollectionViewController</string>

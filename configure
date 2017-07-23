@@ -2,50 +2,58 @@
 # This script assembles Scenes.xctemplate from separate templates.
 # MIT (2016) by Ivan Rublev, based on script by JesusCamacho.
 
+viewCustom="UIViewController + View"
 view="UIViewController"
 table="UITableViewController"
 collection="UICollectionViewController"
 
-rm -rf Scene.xctemplate/$view
-rm -rf Scene.xctemplate/$table
-rm -rf Scene.xctemplate/$collection
+rm -rf Scene.xctemplate/"$viewCustom"
+rm -rf Scene.xctemplate/"$view"
+rm -rf Scene.xctemplate/"$table"
+rm -rf Scene.xctemplate/"$collection"
 
 ## View Contreoller.xctemplate
-cp -rf View\ Controller.xctemplate/$view Scene.xctemplate
-cp -rf View\ Controller.xctemplate/$table Scene.xctemplate
-cp -rf View\ Controller.xctemplate/$collection Scene.xctemplate
+cp -rf View\ Controller.xctemplate/"$viewCustom" Scene.xctemplate
+cp -rf View\ Controller.xctemplate/"$view" Scene.xctemplate
+cp -rf View\ Controller.xctemplate/"$table" Scene.xctemplate
+cp -rf View\ Controller.xctemplate/"$collection" Scene.xctemplate
 
 ## Configurator.xctemplate
 config="Configurator.xctemplate"
 configFile="___FILEBASENAME___Configurator.*"
-cp $config/$configFile Scene.xctemplate/$view
-cp $config/$configFile Scene.xctemplate/$table
-cp $config/$configFile Scene.xctemplate/$collection
+cp $config/$configFile Scene.xctemplate/"$viewCustom"
+cp $config/$configFile Scene.xctemplate/"$view"
+cp $config/$configFile Scene.xctemplate/"$table"
+cp $config/$configFile Scene.xctemplate/"$collection"
 
 ## Interactor.xctemplate
 int="Interactor.xctemplate"
 intFile="___FILEBASENAME___Interactor*.*"
-cp $int/$intFile Scene.xctemplate/$view
-cp $int/$intFile Scene.xctemplate/$table
-cp $int/$intFile Scene.xctemplate/$collection
+cp $int/$intFile Scene.xctemplate/"$viewCustom"
+cp $int/$intFile Scene.xctemplate/"$view"
+cp $int/$intFile Scene.xctemplate/"$table"
+cp $int/$intFile Scene.xctemplate/"$collection"
 
 ## Boundary Models.xctemplate
 model="Boundary Models.xctemplate"
 modelFile="___FILEBASENAME___BoundaryModels.*"
-cp "$model"/$modelFile Scene.xctemplate/$view
-cp "$model"/$modelFile Scene.xctemplate/$table
-cp "$model"/$modelFile Scene.xctemplate/$collection
+cp "$model"/$modelFile Scene.xctemplate/"$viewCustom"
+cp "$model"/$modelFile Scene.xctemplate/"$view"
+cp "$model"/$modelFile Scene.xctemplate/"$table"
+cp "$model"/$modelFile Scene.xctemplate/"$collection"
  
 ## Presenter.xctemplate
 pres="Presenter.xctemplate"
 presFile="___FILEBASENAME___Presenter*.*"
-cp $pres/$presFile Scene.xctemplate/$view
-cp $pres/$presFile Scene.xctemplate/$table
-cp $pres/$presFile Scene.xctemplate/$collection
+cp $pres/$presFile Scene.xctemplate/"$viewCustom"
+cp $pres/$presFile Scene.xctemplate/"$view"
+cp $pres/$presFile Scene.xctemplate/"$table"
+cp $pres/$presFile Scene.xctemplate/"$collection"
  
 ## Router.xctemplate
 router="Router.xctemplate"
 routerFile="___FILEBASENAME___Router.*"
-cp $router/$routerFile Scene.xctemplate/$view
-cp $router/$routerFile Scene.xctemplate/$table
-cp $router/$routerFile Scene.xctemplate/$collection
+cp $router/$routerFile Scene.xctemplate/"$viewCustom"
+cp $router/$routerFile Scene.xctemplate/"$view"
+cp $router/$routerFile Scene.xctemplate/"$table"
+cp $router/$routerFile Scene.xctemplate/"$collection"
