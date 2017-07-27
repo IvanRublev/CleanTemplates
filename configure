@@ -57,3 +57,11 @@ cp $router/$routerFile Scene.xctemplate/"$viewCustom"
 cp $router/$routerFile Scene.xctemplate/"$view"
 cp $router/$routerFile Scene.xctemplate/"$table"
 cp $router/$routerFile Scene.xctemplate/"$collection"
+
+## CustomizableViewType.xctemplate
+customizableViewType="CustomizableViewType.xctemplate"
+customizableViewTypeFile="CustomizableViewType.*"
+customizableViewTypePath="$customizableViewType/$customizableViewTypeFile"
+if [ -e "$customizableViewTypePath" ]; then
+   cp "$customizableViewTypePath" Scene.xctemplate/"$viewCustom"
+fi

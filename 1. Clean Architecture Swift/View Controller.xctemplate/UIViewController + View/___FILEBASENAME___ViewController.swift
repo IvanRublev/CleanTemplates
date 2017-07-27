@@ -11,10 +11,12 @@ import UIKit
 /**
     Class to control the view of the scene.
  */
-class ___VARIABLE_sceneName:identifier___ViewController: UIViewController, ___VARIABLE_sceneName:identifier___PresenterOutput {
+class ___VARIABLE_sceneName:identifier___ViewController: UIViewController, CustomizableViewType, ___VARIABLE_sceneName:identifier___PresenterOutput {
     var output: ___VARIABLE_sceneName:identifier___InteractorInput!
     var router: ___VARIABLE_sceneName:identifier___Router!
     
+    typealias CustomViewType = ___VARIABLE_sceneName:identifier___View
+
     // MARK: Object lifecycle
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -46,22 +48,3 @@ class ___VARIABLE_sceneName:identifier___ViewController: UIViewController, ___VA
     }
 }
 
-// MARK: Custom View
-extension ___VARIABLE_sceneName:identifier___ViewController {
-    var cView: ___VARIABLE_sceneName:identifier___View {
-        get {
-            return view as! ___VARIABLE_sceneName:identifier___View
-        }
-        set {
-            view = newValue
-        }
-    }
-    var cViewIfLoaded: ___VARIABLE_sceneName:identifier___View? {
-        if let viewIfLoaded = viewIfLoaded {
-            return .some(viewIfLoaded as! ___VARIABLE_sceneName:identifier___View)
-        }
-        else {
-            return nil
-        }
-    }
-}
