@@ -15,7 +15,6 @@ class ___VARIABLE_sceneName:identifier___ViewController: UITableViewController, 
     var output: ___VARIABLE_sceneName:identifier___InteractorInput!
     var router: ___VARIABLE_sceneName:identifier___Router!
     
-    
     // MARK: Object lifecycle
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -31,6 +30,11 @@ class ___VARIABLE_sceneName:identifier___ViewController: UITableViewController, 
     override func viewDidLoad() {
         super.viewDidLoad()
         doSomethingOnLoad()
+    }
+    
+    // MARK: Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        router.passDataBetweenScenes(of: segue)
     }
     
     // MARK: Event handling

@@ -32,6 +32,11 @@ class ___VARIABLE_sceneName:identifier___ViewController: UICollectionViewControl
         doSomethingOnLoad()
     }
     
+    // MARK: Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        router.passDataBetweenScenes(of: segue)
+    }
+    
     // MARK: Event handling
     func doSomethingOnLoad() {
         // NOTE: Ask the Interactor to do some work

@@ -47,10 +47,3 @@ class ___VARIABLE_sceneName:identifier___Router {
         // someWhereviewController.objectId = viewController?.objectId
     }
 }
-
-// MARK: - Pass segue event to router for scene communication.
-extension ___VARIABLE_sceneName:identifier___ViewController {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataBetweenScenes(of: segue)
-    }
-}
