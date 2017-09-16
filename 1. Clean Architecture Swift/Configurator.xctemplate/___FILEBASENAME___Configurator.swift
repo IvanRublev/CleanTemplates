@@ -19,14 +19,12 @@ class ___VARIABLE_sceneName:identifier___Configurator {
         
         let router = ___VARIABLE_sceneName:identifier___Router()
         router.viewController = viewController
+        viewController.router = router
         
         let presenter = ___VARIABLE_sceneName:identifier___Presenter()
-        presenter.output = viewController
-        
         let interactor = ___VARIABLE_sceneName:identifier___Interactor()
-        interactor.output = presenter
-        
         viewController.output = interactor
-        viewController.router = router
+        interactor.output = presenter
+        presenter.output = viewController
     }
 }

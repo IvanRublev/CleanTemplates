@@ -15,17 +15,19 @@
 @implementation ___VARIABLE_sceneName:identifier___Configurator
 
 + (void)injectDependenciesForViewController:(___VARIABLE_sceneName:identifier___ViewController *)viewController {
+    if (viewController.output != nil) {
+        return;
+    }
+    
     ___VARIABLE_sceneName:identifier___Router *router = [___VARIABLE_sceneName:identifier___Router new];
     router.viewController = viewController;
+    viewController.router = router;
     
     ___VARIABLE_sceneName:identifier___Presenter *presenter = [___VARIABLE_sceneName:identifier___Presenter new];
-    presenter.output = viewController;
-    
     ___VARIABLE_sceneName:identifier___Interactor *interactor = [___VARIABLE_sceneName:identifier___Interactor new];
-    interactor.output = presenter;
-    
     viewController.output = interactor;
-    viewController.router = router;
+    interactor.output = presenter;
+    presenter.output = viewController;
 }
 
 @end
